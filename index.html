@@ -46,7 +46,7 @@
   --maxw:1180px;
   --display:'Space Grotesk', system-ui, sans-serif;
   --body:'Inter', system-ui, sans-serif;
-  --nav-h:76px;
+  --nav-h:96px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -112,6 +112,7 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.9);back
 .brand{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:700;font-size:1.22rem;letter-spacing:-.02em}
 .mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--cool),var(--cool-deep) 55%,var(--warm));display:grid;place-items:center;flex:none;box-shadow:0 6px 16px -6px rgba(30,155,224,.6)}
 .mark svg{width:21px;height:21px}
+.brand-logo{height:72px;width:auto;display:block;flex:none}
 .brand small{display:block;font-family:var(--body);font-weight:500;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:1px}
 nav.links{display:flex;align-items:center;gap:1.6rem}
 nav.links a{font-weight:500;font-size:.95rem;color:var(--ink-soft);transition:color .15s}
@@ -447,8 +448,8 @@ footer p.about{font-size:.92rem;max-width:24rem;margin-bottom:1.2rem}
 <header class="nav">
   <div class="wrap">
     <a href="#/" class="brand" aria-label="SM Heating and Cooling home">
-      <span class="mark" aria-hidden="true"><svg aria-hidden="true"><use href="#i-logo"/></svg></span>
-      <span>SM Heating and Cooling<small>Somerville, NJ</small></span>
+      <img class="brand-logo" src="logo-v2.svg" alt="SM Heating and Cooling" width="89" height="72">
+      <small>Somerville, NJ</small>
     </a>
     <nav class="links" aria-label="Main"><div class="has-drop"><button aria-expanded="false">Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><a href="#/ac-repair">AC Repair</a><a href="#/ac-installation">AC Installation</a><a href="#/furnace-repair">Furnace Repair</a><a href="#/heating-installation">Heating Installation</a><a href="#/heat-pumps">Heat Pumps</a><a href="#/ductless-mini-splits">Ductless Mini-Splits</a><a href="#/boiler-radiator-service">Boilers & Radiators</a><a href="#/ductwork-airflow">Ductwork & Airflow</a><a href="#/indoor-air-quality">Indoor Air Quality</a><a href="#/thermostats-smart-controls">Thermostats</a><a href="#/maintenance-plans">Maintenance Plans</a><a href="#/emergency-hvac">24/7 Emergency</a><a class="drop-all" href="#/services">View all services →</a></div></div><a href="#/service-areas">Service Areas</a><a href="#/about">About</a><a href="#/faq">FAQs</a><a href="#/contact">Contact</a></nav>
     <div class="nav-cta">
